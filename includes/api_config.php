@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 //API config
 use DigitalOceanV2\Adapter\BuzzAdapter;
 use DigitalOceanV2\DigitalOceanV2;
-$adapter = new BuzzAdapter('c815cfca4e12643ff4f803df4a10763347119fc3d8082f72f3c28baca7a89fde');
+$adapter = new BuzzAdapter('');
 $api = new DigitalOceanV2($adapter);
 $droplet = $api->droplet();
 
