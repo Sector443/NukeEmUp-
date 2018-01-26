@@ -23,7 +23,7 @@
      <div class="row" style="height:">
          <div class="col-xl-4 col-md-4"></div>
          <div class="col-xl-4 col-md-4">
-         <form action="launch_attack.php" method="post">
+         <form name="input_console" action="launch_attack.php" method="post">
              <label for="ip_input_box"><h3>Enter host url:</h3></label>
              <input type="text" name="host_url" class="form-control" placeholder="Example: http://192.168.1.1 or http://google.com" id="ip_input_box"/>
              <label for="server_count"><h3>Number of servers you want:</h3></label>
@@ -38,7 +38,7 @@
              <div class="row">
                 <div class="col-xl-4 col-md-4"></div>
                 <div class="col-xl-4 col-md-4">
-                <button type="submit" class="btn btn-danger">Launch</button>
+                <button type="submit" class="btn btn-danger" onsubmit="return validateinputConsole()">Launch</button>
                 </div>
                 <div class="col-xl-4 col-md-4"></div>
              </div>
@@ -53,5 +53,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/input_console.js"></script>
   </body>
 </html>
